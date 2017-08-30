@@ -8,4 +8,4 @@ RUN dpkg -i blazegraph_2.1.4.deb
 ENV HOME /root
 EXPOSE 9999
 
-CMD service blazegraph start && tail -F /var/log/blazegraph/blazegraph.log
+CMD service blazegraph start & /bin/bash
